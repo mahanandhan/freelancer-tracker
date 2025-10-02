@@ -19,8 +19,8 @@ const Sidebar = () => {
           <span className="text-base cursor-pointer">Dashboard</span>
         </button>
         <button className="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-[#1A4A94] font-medium focus:outline-none transition cursor-pointer">
-          <FaClipboardList size={20} />
-          <span className="text-base cursor-pointer">Project</span>
+          <FaClipboardList size={20} onClick={() => navigate('/projects')}/>
+          <span className="text-base cursor-pointer" onClick={() => navigate('/projects')}>Project</span>
         </button>
         <button className="flex items-center space-x-3 px-4 py-3 rounded-xl hover:bg-[#1A4A94] font-medium focus:outline-none transition cursor-pointer">
           <FaBoxOpen size={20} />
